@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table {
+        width: 70%;
+        border-collapse: collapse;
+        margin: 20px auto;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th {
+        background-color: #b3ecff;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+      .image-cell {
+        width: 30%;
+      }
+      .info-cell {
+        width: 70%;
+      }
+
+      /* CSS cho bảng thứ hai */
+      .entertainment-table {
+        width: 50%;
+        margin: 20px auto;
+        border-collapse: collapse;
+      }
+      .entertainment-table th {
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        color: blue;
+      }
+      .entertainment-table td {
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Bảng 1: Bảng giá sản phẩm -->
+    <h2 style="text-align: center">Bảng giá sản phẩm</h2>
+
+    <table>
+      <tr>
+        <th colspan="2">Bang gia san pham</th>
+      </tr>
+      <tr>
+        <td class="info-cell">
+          <table style="width: 100%">
+            <tr>
+              <td><strong>Noi san xuat</strong></td>
+              <td>VietNam</td>
+            </tr>
+            <tr>
+              <td><strong>Gia tien</strong></td>
+              <td>300.000đ</td>
+            </tr>
+            <tr>
+              <td><strong>Thoi gian bao hanh</strong></td>
+              <td>6 tháng</td>
+            </tr>
+          </table>
+        </td>
+        <td class="image-cell">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi2z3bWwm8pcWKq-wXJSEYklR0K4HGDN3EqQ&s"
+            alt="Shoe Image"
+            width="100%"
+          />
+        </td>
+      </tr>
+    </table>
+
+    <!-- Bảng 2: Mạng nghệ thuật & giải trí -->
+    <h2 style="text-align: center">Mạng nghệ thuật & giải trí</h2>
+
+    <table class="entertainment-table">
+      <tr>
+        <th>Phim</th>
+        <th>Ngày chiếu</th>
+      </tr>
+      <tr>
+        <td>Sherlock Holmes</td>
+        <td>Thứ hai</td>
+      </tr>
+      <tr>
+        <td>Lovejoy</td>
+        <td>Thứ hai</td>
+      </tr>
+    </table>
+  </body>
+</html>

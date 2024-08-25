@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Yêu Cầu</title>
+  </head>
+  <body>
+    <form action="#" method="POST">
+      <!-- Username -->
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        minlength="4"
+        maxlength="30"
+        required
+      />
+      <br /><br />
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br /><br />
+
+      <!-- Tỉnh -->
+      <label for="province">Tỉnh:</label>
+      <select id="province" name="province" required>
+        <option value="HCM">HCM</option>
+        <option value="VungTau">Vũng Tàu</option>
+        <option value="BinhDuong">Bình Dương</option>
+        <option value="Khac">Khác</option>
+      </select>
+      <br /><br />
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="example@example.com"
+        required
+      />
+      <br /><br />
+
+      <!-- Website -->
+      <label for="website">Website:</label>
+      <input type="url" id="website" name="website" />
+      <br /><br />
+
+      <!-- Giới tính -->
+      <label>Giới tính:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Nam</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Nữ</label>
+      <br /><br />
+
+      <!-- Ngày sinh -->
+      <label for="dob">Ngày sinh:</label>
+      <input type="date" id="dob" name="dob" min="2023-01-01" required />
+      <br /><br />
+
+      <!-- Điểm -->
+      <label for="score">Điểm:</label>
+      <input
+        type="number"
+        id="score"
+        name="score"
+        min="0"
+        max="10"
+        step="0.5"
+        required
+      />
+      <br /><br />
+
+      <!-- Màu yêu thích -->
+      <label for="favoriteColor">Màu yêu thích:</label>
+      <input type="color" id="favoriteColor" name="favoriteColor" />
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+body {
+  background-image: url("bg_analytic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 40vh;
+  margin: 0;
+  padding: 0;
+}
+.analytic ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.analytic ul li {
+  display: inline-block;
+  margin: 30px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.number {
+  font-size: 30px;
+  font-weight: bold;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập slide 67.3</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #222;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .text-3d {
+        font-size: 80px;
+        color: #fff;
+        position: relative;
+      }
+
+      .text-3d::after {
+        content: "Đại học UEH";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        color: #00ff00;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-3d">Đại học UEH</div>
+  </body>
+</html>

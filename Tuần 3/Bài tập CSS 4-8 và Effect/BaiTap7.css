@@ -1,0 +1,65 @@
+.portfolio {
+  text-align: center;
+  padding: 50px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.portfolio h2 {
+  font-size: 36px;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-bottom: 4px solid #2fddc0;
+
+  padding-bottom: 10px;
+}
+
+.list-tab {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.list-tab li {
+  margin: 0 15px;
+}
+
+.list-tab li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  transition: color 0.3s ease;
+}
+.list-tab li a:hover {
+  color: #2fddc0; /* Mã màu xanh lá */
+}
+/* Thiết lập cho galerry */
+.galerry {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.galerry li {
+  display: inline-block;
+  width: 33%;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.galerry li img {
+  max-width: 100%;
+  height: auto;
+}
+
+.galerry li:after {
+  content: "";
+  display: block;
+  clear: both;
+}

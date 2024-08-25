@@ -1,0 +1,44 @@
+div.at-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.at-item {
+  text-align: center;
+  width: 274px;
+  height: 60px;
+  background-color: #e6c841;
+  border-radius: 5px;
+  color: #3079ed;
+  font-weight: bold;
+  font-size: 3em;
+  /* Kết hợp các hiệu ứng */
+  animation: combined-animation 5s ease-in-out infinite;
+}
+
+@keyframes combined-animation {
+  0% {
+    transform: translateX(800px) rotateY(30deg) scale(6.5);
+    transform-origin: -100% 50%;
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(0) rotateY(0) scale(1);
+    transform-origin: 600px 50%;
+    opacity: 1;
+  }
+  40% {
+    text-shadow: 0 0 15px #f0f;
+  }
+  60% {
+    text-shadow: 0 0 15px #0ff;
+  }
+  80% {
+    text-shadow: 0 0 10px #0f0;
+  }
+  100% {
+    text-shadow: 0 0 10px #ff0;
+  }
+}

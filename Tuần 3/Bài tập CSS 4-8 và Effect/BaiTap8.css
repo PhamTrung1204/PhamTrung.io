@@ -1,0 +1,47 @@
+#wrapper {
+  width: 450px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 3px solid black;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 3px solid black;
+  box-sizing: border-box;
+}
+
+nav {
+  float: left;
+  width: 30%; /* Điều chỉnh tỷ lệ để phù hợp với kích thước phóng đại */
+  height: 300px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 3px solid black;
+  box-sizing: border-box;
+}
+
+main {
+  float: left;
+  width: 67.6%; /* Điều chỉnh tỷ lệ để phù hợp với kích thước phóng đại */
+  height: 300px;
+  background-color: white;
+  margin-bottom: 10px;
+  border: 3px solid black;
+  box-sizing: border-box;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  height: 75px;
+  margin-top: 10px;
+  background-color: white;
+  border: 3px solid black;
+  box-sizing: border-box;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Styling toàn trang */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      /* Container chính chứa các thẻ */
+      .card-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      /* Styling cho từng thẻ */
+      .card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        width: 30%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+
+      .card h3 {
+        margin: 15px 0;
+        font-size: 18px;
+      }
+
+      .card p {
+        padding: 0 15px 20px;
+        color: #555;
+        font-size: 14px;
+      }
+    </style>
+    <title>Layout Bài 4</title>
+  </head>
+  <body>
+    <h2>Chỉnh layout bài 4 về dạng</h2>
+
+    <!-- Container chứa các thẻ -->
+    <div class="card-container">
+      <!-- Thẻ 1 -->
+      <div class="card">
+        <img src="https://bom.so/KmdMjX" alt="Công nghệ phần mềm" />
+        <h3>CÔNG NGHỆ PHẦN MỀM</h3>
+        <p>
+          Nhu cầu xã hội Cách mạng công nghiệp 4.0 giúp công nghệ thông tin và
+          viễn thông (ICT) xâm nhập...
+        </p>
+      </div>
+
+      <!-- Thẻ 2 -->
+      <div class="card">
+        <img src="https://bom.so/oKOxKu" alt="Ngành thương mại điện tử" />
+        <h3>NGÀNH THƯƠNG MẠI ĐIỆN TỬ</h3>
+        <p>
+          Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay
+          đang có những bước tăng...
+        </p>
+      </div>
+
+      <!-- Thẻ 3 -->
+      <div class="card">
+        <img src="https://bom.so/YoKhBn" alt="Hệ thống thông tin kinh doanh" />
+        <h3>HỆ THỐNG THÔNG TIN KINH DOANH</h3>
+        <p>
+          Nhu cầu xã hội Hiện nay, ứng dụng công nghệ trong điều hành doanh
+          nghiệp đang được các nhà quản...
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

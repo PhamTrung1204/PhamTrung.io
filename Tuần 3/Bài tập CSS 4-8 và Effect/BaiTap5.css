@@ -1,0 +1,40 @@
+.best-shared {
+  text-align: center;
+}
+
+#SH {
+  color: rgb(29, 113, 231);
+}
+
+.btn-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.btn-list li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.btn-list li a {
+  display: inline-block;
+  margin: 5px;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+.btn-list li a:hover {
+  opacity: 0.6;
+}
+h2,
+.lead-text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-size: xx-large;
+}
