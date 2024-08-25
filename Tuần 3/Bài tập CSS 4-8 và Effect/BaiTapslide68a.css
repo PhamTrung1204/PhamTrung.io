@@ -10,7 +10,6 @@
 .view .mask {
   height: 500px;
   width: 120vh;
-
   position: absolute;
   overflow: hidden;
 }
@@ -40,15 +39,17 @@
   color: white;
   font-size: xx-large;
   padding: 20px 0;
-  margin: 50px 0px 50px 0px;
+  margin: 50px 0;
 }
+
 .view p {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-size: 20px;
-  margin: 100px 0 100px 0;
+  margin: 100px 0;
 }
+
 .view a.info {
   display: inline-block;
   text-align: center;
@@ -62,8 +63,9 @@
   font-size: 20px;
   height: 22px;
   width: 110px;
-  transition: background-color 0.3 ease;
+  transition: background-color 0.3s ease;
 }
+
 .view a.info:hover {
   background-color: #555;
 }
@@ -73,6 +75,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative; /* Ensure positioning context for child elements */
 }
 
 .view-first img {
@@ -88,12 +91,10 @@
   transition: all 0.3s ease-out;
 }
 
-.view-first h2,
-.view-first p,
-.view-first a.info {
-  transform: translateY(-50px);
+.view-first h2 {
+  transform: translateY(-50px) rotate(0deg); /* Initial transform state */
   opacity: 0;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .view-first:hover img {
@@ -104,13 +105,13 @@
 .view-first:hover .mask {
   opacity: 1;
   transform: rotate(720deg) scale(1);
-  
+  z-index: 1;
 }
 
 .view-first:hover h2,
 .view-first:hover p,
 .view-first:hover a.info {
-  transform: translateY(0px);
+  transform: translateY(0px) rotate(720deg); /* Apply same rotation as image */
   opacity: 1;
   transition-delay: 0.2s;
 }
